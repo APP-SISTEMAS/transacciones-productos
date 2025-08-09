@@ -1,0 +1,9 @@
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\bin\Debug\DATOS.dll
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\bin\Debug\DATOS.pdb
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\bin\Debug\ENTIDAD.dll
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\bin\Debug\ENTIDAD.pdb
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\obj\Debug\DATOS.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\obj\Debug\DATOS.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\obj\Debug\DATOS.csproj.Up2Date
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\obj\Debug\DATOS.dll
+C:\Users\Administrador\source\repos\transacciones-productos\Productos\DATOS\obj\Debug\DATOS.pdb
