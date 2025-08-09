@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrador\\source\\repos\\transacciones-productos\\Productos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A145220-DD3E-4C40-ABB5-B1AF4CC5DBB2}|PRESENTACION\\PRESENTACION.csproj|c:\\users\\administrador\\source\\repos\\transacciones-productos\\productos\\presentacion\\frm_transacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A145220-DD3E-4C40-ABB5-B1AF4CC5DBB2}|PRESENTACION\\PRESENTACION.csproj|solutionrelative:presentacion\\frm_transacciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_Transacciones.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrador\\source\\repos\\transacciones-productos\\Productos\\PRESENTACION\\frm_Transacciones.cs",
+              "RelativeDocumentMoniker": "PRESENTACION\\frm_Transacciones.cs",
+              "ToolTip": "C:\\Users\\Administrador\\source\\repos\\transacciones-productos\\Productos\\PRESENTACION\\frm_Transacciones.cs [Design]",
+              "RelativeToolTip": "PRESENTACION\\frm_Transacciones.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T20:13:07.324Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

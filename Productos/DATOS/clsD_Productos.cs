@@ -103,5 +103,40 @@ namespace DATOS
         }
 
 
+
+        public static string insertarTransacionProductos(clsE_Fact_Productos clsE_Fact_Productos, clsE_Fact_DetalleTransacciones clsE_Fact_DetalleTransacciones)
+        {
+            clsD_Conexion c = new clsD_Conexion();
+            String mensaje;
+            //  clsE_Fact_Productos eProductos = new clsE_Fact_Productos();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Tienda.dbo.spInsertar_TransacionesProductos", c.OpenConnecion());
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@Id", SqlDbType.Int).Value = clsE_Fact_Productos.Id;// eProductos.Codigo;
+                cmd.Parameters.Add("@Fecha", SqlDbType.VarChar).Value = clsE_Fact_DetalleTransacciones.Fecha;
+                cmd.Parameters.Add("@tipo", SqlDbType.Int).Value = clsE_Fact_DetalleTransacciones.TipoTransaccion;
+                cmd.Parameters.Add("@cantidad", SqlDbType.VarChar).Value = clsE_Fact_Productos.Cantidad;
+                cmd.Parameters.Add("@Observacion", SqlDbType.VarChar).Value = clsE_Fact_DetalleTransacciones.Observacion;
+
+                int resultado = cmd.ExecuteNonQuery();
+                mensaje = resultado == 1 ? "OK" : "";
+
+            }
+
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                MessageBox.Show("Error en la base de datos: " + ex.Message, "Error Base de Datos***", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                c.CloseConnecion();
+
+            }
+
+            return mensaje;
+
+        }
+
     }
 }

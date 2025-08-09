@@ -31,6 +31,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgDetalleTransacciones = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtObser = new System.Windows.Forms.TextBox();
+            this.lblObser = new System.Windows.Forms.Label();
             this.cbxTipo = new System.Windows.Forms.ComboBox();
             this.lblTipo = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -72,9 +74,12 @@
             this.dtgDetalleTransacciones.ReadOnly = true;
             this.dtgDetalleTransacciones.Size = new System.Drawing.Size(770, 193);
             this.dtgDetalleTransacciones.TabIndex = 0;
+            this.dtgDetalleTransacciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDetalleTransacciones_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtObser);
+            this.groupBox1.Controls.Add(this.lblObser);
             this.groupBox1.Controls.Add(this.cbxTipo);
             this.groupBox1.Controls.Add(this.lblTipo);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -96,6 +101,23 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transacciones de Inventario";
+            // 
+            // txtObser
+            // 
+            this.txtObser.Location = new System.Drawing.Point(122, 162);
+            this.txtObser.Name = "txtObser";
+            this.txtObser.Size = new System.Drawing.Size(303, 20);
+            this.txtObser.TabIndex = 20;
+            // 
+            // lblObser
+            // 
+            this.lblObser.AutoSize = true;
+            this.lblObser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObser.Location = new System.Drawing.Point(14, 162);
+            this.lblObser.Name = "lblObser";
+            this.lblObser.Size = new System.Drawing.Size(92, 18);
+            this.lblObser.TabIndex = 19;
+            this.lblObser.Text = "Observacion";
             // 
             // cbxTipo
             // 
@@ -143,6 +165,7 @@
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
@@ -172,6 +195,7 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblCantidad
             // 
@@ -261,5 +285,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbxTipo;
         private System.Windows.Forms.DataGridView dtgDetalleTransacciones;
+        private System.Windows.Forms.TextBox txtObser;
+        private System.Windows.Forms.Label lblObser;
     }
 }

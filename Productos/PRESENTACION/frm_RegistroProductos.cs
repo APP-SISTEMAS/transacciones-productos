@@ -123,6 +123,8 @@ namespace PRESENTACION
         }
 
 
+
+
         //CARGA LOS TODOS LOS PRODUCTOS
         private void cargarProductos()
         {
@@ -187,9 +189,11 @@ namespace PRESENTACION
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+
+             
             frm_Transacciones transaciones = new frm_Transacciones();
             transaciones.ShowDialog();
-            transaciones.Show();
+    
            
                 
         }
@@ -198,5 +202,7 @@ namespace PRESENTACION
         {
             limpiarCampos();
         }
+
+
     }
 }
